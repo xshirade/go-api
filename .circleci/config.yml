@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:latest
+    steps:
+      - checkout
+      - run: go get -u github.com/gorilla/mux
+      - run: go test
