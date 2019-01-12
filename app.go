@@ -8,7 +8,7 @@ import (
 )
 
 func handler(res http.ResponseWriter, req *http.Request) {
-	res.Write([]byte("Gorilla!\n"))
+	res.Write([]byte("Gorilla!"))
 }
 
 func main() {
